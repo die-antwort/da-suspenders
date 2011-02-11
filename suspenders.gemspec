@@ -3,23 +3,18 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.rubygems_version = '1.3.5'
 
-  s.name    = 'suspenders'
-  s.version = '0.2.2'
-  s.date    = '2010-12-15'
+  s.name    = 'da-suspenders'
+  s.version = '0.0.1'
 
-  s.summary     = "Generate a Rails app using thoughtbot's best practices."
-  s.description = <<-HERE
-Suspenders is a base Rails project that you can upgrade. It is used by
-thoughtbot to get a jump start on a working app. Use Suspenders if you're in a
-rush to build something amazing; don't use it if you like missing deadlines.
-  HERE
+  s.summary     = "Generate a Rails app using DIE ANTWORT's best practices."
+  s.description = "DIE ANTWORT's fork of thoughtbot's original Suspenders. Suspenders is an upgradeable base Rails project."
 
-  s.authors  = ["thoughtbot"]
-  s.email    = 'support@thoughtbot.com'
-  s.homepage = 'http://github.com/thoughtbot/suspenders-gem'
+  s.authors  = ["thoughtbot", "Stefan Daschek"]
+  s.email    = 'stefan@die-antwort.eu'
+  s.homepage = 'http://github.com/die-antwort/da-suspenders'
 
-  s.executables = ["suspenders"]
-  s.default_executable = 'suspenders'
+  s.executables = ["da-suspenders"]
+  s.default_executable = 'da-suspenders'
 
   s.rdoc_options = ["--charset=UTF-8"]
   s.extra_rdoc_files = %w[README.md LICENSE]
