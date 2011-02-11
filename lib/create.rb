@@ -22,6 +22,7 @@ module Suspenders
       exec(<<-COMMAND)
         rails new #{project_path} \
           --template="#{template}" \
+          --database=mysql
           --skip-test-unit \
           --skip-prototype
       COMMAND
