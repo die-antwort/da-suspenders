@@ -49,7 +49,7 @@ module Suspenders
     end
 
     def template
-      File.expand_path(File.dirname(__FILE__) + "/../template/suspenders.rb")
+      File.expand_path(File.dirname(__FILE__) + "/../template/da-suspenders.rb")
     end
   end
 end

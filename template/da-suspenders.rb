@@ -1,7 +1,3 @@
-# Suspenders
-# =============
-# by thoughtbot
-
 require 'net/http'
 require 'net/https'
 
