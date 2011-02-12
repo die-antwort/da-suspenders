@@ -35,6 +35,7 @@ It includes application gems like:
 * [Paperclip](https://github.com/thoughtbot/paperclip) for file uploads
 * [Sprockets](https://github.com/sstephenson/sprockets) for JavaScript dependency management and concatenation
 * Our fork of [jRails](https://github.com/die-antwort/jrails), which brings you [jQuery](https://github.com/jquery/jquery) and [jQuery UI](https://github.com/jquery/jquery-ui) via Sprockets
+* [AppConfig](https://github.com/die-antwort/app_config) for simple application configuration
 
 
 And testing gems like:

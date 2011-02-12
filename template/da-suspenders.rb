@@ -89,6 +89,11 @@ def install_misc_support_files
   trout "app/helpers/body_class_helper.rb"
 end
 
+def install_app_config
+  say "Installing app_config", :yellow
+  generate "app_config:install staging"
+end
+
 def install_compass
   say "Installing compass", :yellow
   run "compass init rails . --sass-dir app/stylesheets --css-dir public/stylesheets -q"
@@ -152,6 +157,7 @@ setup_viennese_timezone
 update_generators_config
 create_application_layout_and_views
 install_misc_support_files
+install_app_config
 install_compass
 install_formtastic
 install_sprockets_and_jquery
