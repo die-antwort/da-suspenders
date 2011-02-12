@@ -1,12 +1,39 @@
-development: &default
+development:
   adapter: mysql
-  database: <%= app_name %>_development
+  encoding: utf8
+  reconnect: false
+  database: <%= app_name %>_dev
+  pool: 5
   username: root
+  password: root
+  host: localhost
+
+test:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: <%= app_name %>_test
+  pool: 5
+  username: root
+  password: root
+  host: localhost
+
+staging:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: <%= app_name %>_staging
+  pool: 5
+  username: <%= app_name %>_s
   password:
   host: localhost
+
+production:
+  adapter: mysql
   encoding: utf8
-
-test: &TEST
-  <<: *default
-  database: <%= app_name %>_test
-
+  reconnect: false
+  database: <%= app_name %>
+  pool: 5
+  username: <%= app_name %>
+  password:
+  host: localhost
