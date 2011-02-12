@@ -30,7 +30,7 @@ end
 def create_gemfile_and_install_gems
   say "Creating Gemfile and installing gems (this may take a while)", :yellow
   trout "Gemfile"
-  run "bundle install --local"
+  run "bundle install"
 end
   
 def add_staging_environment
