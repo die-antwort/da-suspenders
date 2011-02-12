@@ -1,57 +1,24 @@
 Gem::Specification.new do |s|
-  s.specification_version = 2 if s.respond_to? :specification_version=
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.rubygems_version = '1.3.5'
-
-  s.name    = 'da-suspenders'
-  s.version = '0.0.1'
-
+  s.name        = 'da-suspenders'
+  s.version     = '0.0.1rc'
+  s.platform    = Gem::Platform::RUBY
+  s.authors     = ["thoughtbot", "Stefan Daschek"]
+  s.email       = 'stefan@die-antwort.eu'
+  s.homepage    = 'http://github.com/die-antwort/da-suspenders'
   s.summary     = "Generate a Rails app using DIE ANTWORT's best practices."
   s.description = "DIE ANTWORT's fork of thoughtbot's original Suspenders. Suspenders is an upgradeable base Rails project."
 
-  s.authors  = ["thoughtbot", "Stefan Daschek"]
-  s.email    = 'stefan@die-antwort.eu'
-  s.homepage = 'http://github.com/die-antwort/da-suspenders'
-
-  s.executables = ["da-suspenders"]
-  s.default_executable = 'da-suspenders'
-
-  s.rdoc_options = ["--charset=UTF-8"]
-  s.extra_rdoc_files = %w[README.md LICENSE]
+  s.required_rubygems_version = ">= 1.3.6"
 
   s.add_dependency('rails', '>= 3.0.3')
   s.add_dependency('bundler', '>= 1.0.7')
   s.add_dependency('trout', '>= 0.3.0')
 
-  # = MANIFEST =
-  s.files = %w[
-    LICENSE
-    README.md
-    Rakefile
-    bin/suspenders
-    features/rake_clean.feature
-    features/step_definitions/shell.rb
-    features/support/env.rb
-    lib/create.rb
-    lib/errors.rb
-    suspenders.gemspec
-    template/files/README_FOR_SUSPENDERS
-    template/files/_flashes.html.erb
-    template/files/_javascript.html.erb
-    template/files/body_class_helper.rb
-    template/files/errors.rb
-    template/files/factory_girl_steps.rb
-    template/files/mysql_database.yml.erb
-    template/files/suspenders_gitignore
-    template/files/suspenders_layout.html.erb.erb
-    template/files/time_formats.rb
-    template/suspenders.rb
-    template/trout/Gemfile
-    template/trout/public/javascripts/jquery-ui.js
-    template/trout/public/javascripts/jquery.js
-    template/trout/public/javascripts/prefilled_input.js
-  ]
-  # = MANIFEST =
+  s.files        = `git ls-files`.split("\n")
+  s.executables  = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
+  s.test_files   = s.files.select{ |path| path =~ /^features/ }
+  s.require_path = 'lib'
 
-  s.test_files = s.files.select {|path| path =~ /^features/ }
+  s.rdoc_options = ["--charset=UTF-8"]
+  s.extra_rdoc_files = %w[README.md LICENSE]
 end
