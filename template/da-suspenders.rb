@@ -49,10 +49,7 @@ end
 def setup_database
   say "Setting up database config", :yellow
   template "mysql_database.yml.erb", "config/database.yml", :force => true
-  say "WARNING: Answering yes will drop databases if they already exist!", :red
-  if yes?("Create databases '#{app_name}_dev' and '#{app_name}_test'?")
-    rake "db:drop db:create"
-  end
+  rake "db:create"
 end
 
 def setup_german_locale
