@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Testapp</title>
+  <link href="/stylesheets/application.css" type="text/css" rel="stylesheet">
+  <!--[if lte IE 7]><link href="/public/stylesheets/ie7.css" type="text/css" rel="stylesheet"><![endif]-->
+  <%= sprockets_include_tag %>
+  <%= javascript_tag "$.ajaxSetup({ async: false });" if Rails.env.test?%>
+  <%= csrf_meta_tag %>
+</head>
+<body class="<%= body_class %>">
+  <%= render :partial => "flashes" %>
+  <%= yield %>
+</body>
+</html>
+<!-- Created with care by DIE ANTWORT · Büro für Informationstechnik GmbH -->
