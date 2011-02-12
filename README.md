@@ -53,7 +53,7 @@ DA-Suspenders also comes with:
 * German localization and timezone setting.
 * Rails' flashes set up and in application layout.
 
-See [template/files](https://github.com/die-antwort/da-suspenders/blob/master/trout) to see what is installed via Trout.
+See [template/files](https://github.com/die-antwort/da-suspenders/blob/master/template/trout) to see what is installed via Trout.
 
 
 ## Credits
