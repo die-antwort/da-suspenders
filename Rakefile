@@ -1,6 +1,8 @@
 require "bundler"
 require "cucumber/rake/task"
 
+Bundler::GemHelper.install_tasks
+
 #############################################################################
 #
 # Testing functions
@@ -35,3 +37,4 @@ end
 
 desc 'Run the test suite'
 task :default => ['test:full']
+
