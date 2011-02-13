@@ -1,6 +1,8 @@
+require File.expand_path("../lib/da-suspenders/version", __FILE__)
+
 Gem::Specification.new do |s|
   s.name        = 'da-suspenders'
-  s.version     = '0.0.1rc'
+  s.version     = DaSuspenders::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["thoughtbot", "Stefan Daschek"]
   s.email       = 'stefan@die-antwort.eu'
