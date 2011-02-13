@@ -137,6 +137,7 @@ def install_rspec_and_cucumber
 #                  %r{require .*capybara_javascript_emulation.*},
 #                  ''
   copy_file "factory_girl_steps.rb", "features/step_definitions/factory_girl_steps.rb"
+  trout "features/step_definitions/js_steps.rb"
 end
 
 def cleanup

@@ -10,6 +10,12 @@ When 'I generate "$generator_with_args"' do |generator_with_args|
   end
 end
 
+When 'I create a file named "$filename" with:' do |filename, content|
+  File.open("test_project/#{filename}", "w") do |file|
+    file.write(content)
+  end
+end
+
 Then 'I see a successful response in the shell' do
   $?.to_i.should == 0
 end
