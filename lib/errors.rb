@@ -1,6 +1,6 @@
 # User errors
 
-module Suspenders
+module DaSuspenders
   class InvalidInput < Exception; end
 
   module Errors

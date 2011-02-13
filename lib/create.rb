@@ -3,7 +3,7 @@
 require 'rubygems'
 require File.expand_path(File.dirname(__FILE__) + "/errors")
 
-module Suspenders
+module DaSuspenders
   class Create
     attr_accessor :project_path
 
