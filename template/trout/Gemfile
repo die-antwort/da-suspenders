@@ -20,7 +20,7 @@ group :development, :test do
 end
 
 group :test do
-  gem "akephalos"
+  gem "akephalos", :git => "git://github.com/die-antwort/akephalos.git"
   gem "cucumber-rails"
   gem "factory_girl_rails"
   gem "capybara"
