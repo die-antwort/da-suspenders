@@ -62,6 +62,11 @@ def setup_viennese_timezone
   say "Setting up viennese timezone", :yellow
   gsub_file 'config/application.rb', "# config.time_zone = 'Central Time (US & Canada)'", "config.time_zone = 'Vienna'"
 end
+
+def disable_timestamped_migrations
+  say "Disabling timestamped migrations", :yellow
+  inject_into_class "config/application.rb", "Application", "\n    config.active_record.timestamped_migrations = false\n\n"
+end
   
 def update_generators_config
   say "Updating config for generators", :yellow
@@ -152,6 +157,7 @@ add_staging_environment
 setup_database
 setup_german_locale
 setup_viennese_timezone
+disable_timestamped_migrations
 update_generators_config
 create_application_layout_and_views
 install_misc_support_files
