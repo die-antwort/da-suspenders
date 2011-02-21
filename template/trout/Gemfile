@@ -10,10 +10,19 @@ gem "hoptoad_notifier"
 gem "sprockets", "~> 1.0.2"
 gem "will_paginate"
 
+
 # Uncomment if you want to use any of those
+
 #gem "paperclip"
 #gem "carrierwave"
 #gem "devise"
+
+## RMagick as used by RefineryCMS, to make sure it works on Windows
+#rmagick_options = { :require => false }
+#if Bundler::WINDOWS
+#  rmagick_options.merge!(:git => 'git://github.com/refinerycms/rmagick.git', :branch => 'windows')  
+#end
+#gem "rmagick", "2.12.0", rmagick_options
 
 # RSpec needs to be in :development group to expose generators
 # and rake tasks without having to type RAILS_ENV=test.
