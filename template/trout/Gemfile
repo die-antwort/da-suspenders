@@ -12,6 +12,8 @@ gem "will_paginate"
 
 # Uncomment if you want to use any of those
 #gem "paperclip"
+#gem "carrierwave"
+#gem "devise"
 
 # RSpec needs to be in :development group to expose generators
 # and rake tasks without having to type RAILS_ENV=test.
