@@ -8,7 +8,7 @@ gem "compass", "~> 0.10.6"
 gem "formtastic", ">= 1.2.1"
 gem "hoptoad_notifier"
 gem "sprockets", "~> 1.0.2"
-gem "will_paginate"
+gem "will_paginate", "~> 3.0.pre2"
 
 
 # Uncomment if you want to use any of those
