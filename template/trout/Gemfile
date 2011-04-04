@@ -16,6 +16,7 @@ gem "will_paginate", "~> 3.0.pre2"
 #gem "paperclip"
 #gem "carrierwave"
 #gem "devise"
+#gem "cancan"
 
 ## RMagick as used by RefineryCMS, to make sure it works on Windows
 #rmagick_options = { :require => false }
