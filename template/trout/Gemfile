@@ -1,11 +1,11 @@
 source :rubygems
 
-gem "rails", "3.0.5"
+gem "rails", "3.0.7"
 gem "mysql"
 
 gem "app_config", :git => "git://github.com/die-antwort/app_config.git"
-gem "compass", "~> 0.10.6"
-gem "formtastic", ">= 1.2.1"
+gem "compass", "~> 0.11.1"
+gem "formtastic", "~> 1.2.3"
 gem "hoptoad_notifier"
 gem "sprockets", "~> 1.0.2"
 gem "will_paginate", "~> 3.0.pre2"
