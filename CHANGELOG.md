@@ -1,3 +1,15 @@
+## 1.0.2 (2011-06-10)
+
+### New / Changed
+ * Additional entries in Gemfile (all commented out by default): Devise, CanCan, CarrierWave, RMagick.
+ * Localized labels for will_paginate.
+ * Updated gems: Rails (3.0.7), Compass (0.11.1), Formtastic (1.2.3).
+ * Explicit dependency on rake 0.8.7 (to avoid problems with rake 0.9.x).
+ 
+### Fixed
+ * Fixed missing version requirement for will_paginate.
+
+
 ## 1.0.1 (2011-02-16)
 
 ### New / Changed
@@ -10,4 +22,4 @@
 
 
 ## 1.0.0 (2011-02-14)
-* Initial Release
+ * Initial Release

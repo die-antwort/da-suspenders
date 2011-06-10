@@ -30,13 +30,14 @@ To see the latest and greatest gems, look at DA-Suspenders'
 It includes application gems like:
 
 * [Compass](https://github.com/chriseppstein/compass), a [Sass-based](http://sass-lang.com/) CSS Meta-Framework
-* [Formtastic](https://github.com/justinfrench/formtastic) for better forms
-* [Hoptoad Notifier](https://github.com/thoughtbot/hoptoad_notifier) for exception notification
-* [Paperclip](https://github.com/thoughtbot/paperclip) for file uploads
 * [Sprockets](https://github.com/sstephenson/sprockets) for JavaScript dependency management and concatenation
+* [will_paginate](https://github.com/mislav/will_paginate/wiki/) for easy pagination
 * Our fork of [jRails](https://github.com/die-antwort/jrails), which brings you [jQuery](https://github.com/jquery/jquery) and [jQuery UI](https://github.com/jquery/jquery-ui) via Sprockets
+* [Paperclip](https://github.com/thoughtbot/paperclip) or [CarrierWave](https://github.com/jnicklas/carrierwave) for file uploads
+* [Formtastic](https://github.com/justinfrench/formtastic) for better forms
+* [Devise](https://github.com/plataformatec/devise) and [CanCan](https://github.com/ryanb/cancan) for authentication and authorization
 * [AppConfig](https://github.com/die-antwort/app_config) for simple application configuration
-
+* [Hoptoad Notifier](https://github.com/thoughtbot/hoptoad_notifier) for exception notification
 
 And testing gems like:
 
@@ -44,6 +45,9 @@ And testing gems like:
 * [RSpec](https://github.com/rspec/rspec) for awesome, readable isolation testing
 * [Factory Girl](https://github.com/thoughtbot/factory_girl) for easier creation of test data
 * [Timecop](https://github.com/jtrupiano/timecop) for dealing with time
+
+Some gems are commented out by default in the Gemfile – just uncomment the ones you want to use.
+
 
 
 ## Other goodies
