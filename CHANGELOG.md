@@ -1,3 +1,9 @@
+## 1.0.3 (2011-06-10)
+
+### Fixed
+ * Explicit dependency on Rails 3.0.7 in gemspec.
+
+
 ## 1.0.2 (2011-06-10)
 
 ### New / Changed
