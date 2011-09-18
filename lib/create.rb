@@ -5,27 +5,29 @@ require File.expand_path(File.dirname(__FILE__) + "/errors")
 
 module DaSuspenders
   class Create
-    attr_accessor :project_path
+    attr_accessor :project_path, :repo
 
-    def self.run!(project_path)
-      creator = self.new(project_path)
+    def self.run!(project_path, repo)
+      creator = self.new(project_path, repo)
       creator.create_project!
     end
 
-    def initialize(project_path)
+    def initialize(project_path, repo)
       self.project_path = project_path
+      self.repo = repo
       validate_project_path
       validate_project_name
     end
 
     def create_project!
-      exec(<<-COMMAND)
+      command = <<-COMMAND
         rails new #{project_path} \
           --template="#{template}" \
           --database=mysql \
-          --skip-test-unit \
-          --skip-prototype
+          --skip-test-unit
       COMMAND
+      command = "REPO=#{repo} #{command}" if repo
+      exec(command)
     end
 
     private

@@ -16,7 +16,7 @@ def action_mailer_host(rails_env, host)
 end
 
 def origin
-  "git://github.com/die-antwort/da-suspenders.git"
+  ENV["REPO"].presence || "git://github.com/die-antwort/da-suspenders.git"
 end
 
 def trout(destination_path)

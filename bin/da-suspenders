@@ -12,7 +12,7 @@ end
 case ARGV[0]
 when 'create', '--create'
   begin
-    DaSuspenders::Create.run!(ARGV[1])
+    DaSuspenders::Create.run!(ARGV[1], ARGV[2])
   rescue DaSuspenders::InvalidInput => e
     error_with_message(e.message)
   end
