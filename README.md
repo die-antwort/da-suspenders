@@ -30,14 +30,12 @@ To see the latest and greatest gems, look at DA-Suspenders'
 It includes application gems like:
 
 * [Compass](https://github.com/chriseppstein/compass), a [Sass-based](http://sass-lang.com/) CSS Meta-Framework
-* [Sprockets](https://github.com/sstephenson/sprockets) for JavaScript dependency management and concatenation
 * [will_paginate](https://github.com/mislav/will_paginate/wiki/) for easy pagination
-* Our fork of [jRails](https://github.com/die-antwort/jrails), which brings you [jQuery](https://github.com/jquery/jquery) and [jQuery UI](https://github.com/jquery/jquery-ui) via Sprockets
 * [Paperclip](https://github.com/thoughtbot/paperclip) or [CarrierWave](https://github.com/jnicklas/carrierwave) for file uploads
 * [Formtastic](https://github.com/justinfrench/formtastic) for better forms
 * [Devise](https://github.com/plataformatec/devise) and [CanCan](https://github.com/ryanb/cancan) for authentication and authorization
 * [AppConfig](https://github.com/die-antwort/app_config) for simple application configuration
-* [Hoptoad Notifier](https://github.com/thoughtbot/hoptoad_notifier) for exception notification
+* [Airbrake](https://github.com/thoughtbot/airbrake) for exception notification
 
 And testing gems like:
 

@@ -1,23 +1,46 @@
 source :rubygems
 
-gem "rake", "0.8.7"
-gem "rails", "3.0.7"
+gem "rails", "3.1.1"
+gem "json"
+gem "jquery-rails"
 gem "mysql"
 
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails',   '~> 3.1.4'
+  gem 'coffee-rails', '~> 3.1.1'
+  gem 'uglifier', '>= 1.0.3'
+  gem "compass", "~> 0.12.alpha"
+end
+
 gem "app_config", :git => "git://github.com/die-antwort/app_config.git"
-gem "compass", "~> 0.11.1"
-gem "formtastic", "~> 1.2.3"
-gem "hoptoad_notifier"
-gem "sprockets", "~> 1.0.2"
-gem "will_paginate", "~> 3.0.pre2"
+gem "formtastic", "~> 2.0.0"
+gem "airbrake"
+gem "will_paginate", "~> 3.0"
+
+# Optional gems (from Rails 3.1 default Gemfile):
+
+# To use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.0.0'
+
+# Use unicorn as the web server
+# gem 'unicorn'
+
+# Deploy with Capistrano
+# gem 'capistrano'
+
+# To use debugger
+# gem 'ruby-debug'
 
 
-# Uncomment if you want to use any of those
+# More optional gems that we use quite often
 
-#gem "paperclip"
-#gem "carrierwave"
-#gem "devise"
-#gem "cancan"
+# gem "paperclip"
+# gem "carrierwave"
+# gem "devise"
+# gem "cancan"
+
 
 ## RMagick as used by RefineryCMS, to make sure it works on Windows
 #rmagick_options = { :require => false }
@@ -29,7 +52,7 @@ gem "will_paginate", "~> 3.0.pre2"
 # RSpec needs to be in :development group to expose generators
 # and rake tasks without having to type RAILS_ENV=test.
 group :development, :test do
-  gem "rspec-rails", "~> 2.4.0"
+  gem "rspec-rails", "~> 2.6.0"
 end
 
 group :test do

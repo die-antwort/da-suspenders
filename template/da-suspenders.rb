@@ -98,36 +98,23 @@ end
 
 def install_compass
   say "Installing compass", :yellow
-  run "compass init rails . --sass-dir app/stylesheets --css-dir public/stylesheets -q"
-  inside 'app/stylesheets' do
-    remove_file 'ie.scss'
-    remove_file 'print.scss'
-    remove_file 'screen.scss'
-    empty_directory 'content'
-    empty_directory 'vendor'
-  end
-  trout "app/stylesheets/application.scss" 
-  trout "app/stylesheets/ie.scss" 
+  remove_file "app/assets/stylesheets/application.css"
+  trout "app/assets/stylesheets/application.css.scss"
+  trout "app/assets/stylesheets/ie6.css.scss"
+  trout "app/assets/stylesheets/ie7.css.scss"
 end
 
 def install_formtastic
   say "Installing formtastic", :yellow
   generate "formtastic:install"
-  remove_file "public/stylesheets/formtastic.css"
-  remove_file "public/stylesheets/formtastic-changes.css"
-  trout "lib/templates/erb/scaffold/_form.html.erb"
 end
 
-def install_sprockets_and_jquery
-  say "Installing sprockets, jQuery, and some other javascripts", :yellow
-  plugin 'sprockets-rails', :git => 'git://github.com/gmoeck/sprockets-rails.git'
-  plugin 'jrails', :git => 'git://github.com/die-antwort/jrails.git'
-  route 'SprocketsApplication.routes(self)'
-  remove_dir 'public/javascripts'
-  remove_file "app/javascripts/application.js"
-  trout "app/javascripts/application.js"
-  trout "vendor/sprockets/modernizr/src/modernizr.js" 
-  trout "vendor/sprockets/jquery-ujs/src/rails.js" 
+def install_javascripts
+  say "Installing application.js.coffee, modernizr and jquery-ui", :yellow
+  remove_file "app/assets/javascripts/application.js"
+  trout "app/assets/javascripts/application.js.coffee"
+  trout "vendor/assets/javascripts/modernizr.js" 
+  trout "vendor/assets/javascripts/jquery-ui-1.8.16.js" 
 end
 
 def install_rspec_and_cucumber
@@ -165,7 +152,7 @@ install_misc_support_files
 install_app_config
 install_compass
 install_formtastic
-install_sprockets_and_jquery
+install_javascripts
 install_rspec_and_cucumber
 cleanup
 

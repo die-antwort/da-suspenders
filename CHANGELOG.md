@@ -1,3 +1,12 @@
+## 1.1.0 (2011-10-12)
+
+### New / Changed
+ * Updated to use Rails 3.1.1:
+ ** Removed sprockets and jrails (no longer needed)
+ * ie6.css and ie7.css instead of only one common ie.css (inspired by Formtastic)
+ * Switched from Hoptoad Notifier to Airbrake.
+ * Pass in REPO to specify the da-suspenders repo (defaults to local dir for testing).
+
 ## 1.0.3 (2011-06-10)
 
 ### Fixed
