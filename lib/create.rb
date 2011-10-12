@@ -26,7 +26,7 @@ module DaSuspenders
           --database=mysql \
           --skip-test-unit
       COMMAND
-      command = "REPO=#{repo} #{command}" if repo
+      ENV["REPO"] = repo if repo
       exec(command)
     end
 
