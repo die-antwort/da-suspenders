@@ -5,18 +5,20 @@ require File.expand_path(File.dirname(__FILE__) + "/errors")
 
 module DaSuspenders
   class Create
-    attr_accessor :project_path, :repo
+    attr_accessor :project_path, :with_mongoid, :repo
 
-    def self.run!(project_path, repo)
-      creator = self.new(project_path, repo)
+    def self.run!(project_path, with_mongoid, repo)
+      creator = self.new(project_path, with_mongoid == "--with-mongoid", repo)
       creator.create_project!
     end
 
-    def initialize(project_path, repo)
+    def initialize(project_path, with_mongoid, repo)
       self.project_path = project_path
+      self.with_mongoid = with_mongoid
       self.repo = repo
       validate_project_path
       validate_project_name
+      check_for_mongod_process if with_mongoid
     end
 
     def create_project!
@@ -24,9 +26,11 @@ module DaSuspenders
         rails new #{project_path} \
           --template="#{template}" \
           --database=mysql \
-          --skip-test-unit
+          --skip-test-unit \
+          #{'--skip-active-record' if with_mongoid}
       COMMAND
       ENV["REPO"] = repo if repo
+      ENV["WITH_MONGOID"] = "1" if with_mongoid
       exec(command)
     end
 
@@ -50,6 +54,12 @@ module DaSuspenders
       end
     end
 
+    def check_for_mongod_process
+      unless system("ps aux | grep mongod | grep -vq grep")
+        raise InvalidInput.new("mongod process not found (mongod must be running when using --with-mongoid)")
+      end
+    end
+    
     def template
       File.expand_path(File.dirname(__FILE__) + "/../template/da-suspenders.rb")
     end

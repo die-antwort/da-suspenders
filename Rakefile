@@ -19,11 +19,12 @@ namespace :test do
 end
 
 namespace :test_project do
-  desc 'Suspend a new project. Pass REPO=... to change the Suspenders repo (defaults to dir with Rakefile).'
+  desc 'Suspend a new project. Pass WITH_MONGOID=1 to use mongoid. Pass REPO=... to change the Suspenders repo (defaults to dir with Rakefile).'
   task :generate do
     FileUtils.rm_rf(TEST_PROJECT)
     repo = (ENV['REPO'] || "file://#{Dir.pwd}").to_s
-    sh 'ruby', 'bin/da-suspenders', 'create', TEST_PROJECT, repo
+    with_mongoid = ENV["WITH_MONGOID"] ? "--with-mongoid" : ""
+    sh 'ruby', 'bin/da-suspenders', 'create', TEST_PROJECT, with_mongoid, repo
   end
 
   desc 'Remove a suspended project'

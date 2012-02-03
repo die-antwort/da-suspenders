@@ -30,6 +30,13 @@ end
 def create_gemfile_and_install_gems
   say "Creating Gemfile and installing gems (this may take a while)", :yellow
   trout "Gemfile"
+  if ENV["WITH_MONGOID"]
+    inject_into_file "Gemfile",
+                     %Q{gem "mongoid", "~> 2.4"\n} +
+                     %Q{gem "bson_ext", "~> 1.5"},
+                     :after => 'gem "mysql"'
+    gsub_file "Gemfile", 'gem "mysql"', ""
+  end
   run "bundle install"
 end
   
@@ -85,6 +92,11 @@ def create_application_layout_and_views
   trout "app/views/shared/_flashes.html.erb"
 end
 
+def install_mongoid
+  say "Installing Mongoid", :yellow
+  generate "mongoid:config"
+end
+
 def install_misc_support_files
   say "Installing miscellaneous support files", :yellow
   trout "config/initializers/errors.rb"
@@ -135,12 +147,13 @@ end
 
 create_gemfile_and_install_gems
 add_staging_environment
-setup_database
+setup_database unless ENV["WITH_MONGOID"]
 setup_german_locale
 setup_viennese_timezone
-disable_timestamped_migrations
+disable_timestamped_migrations unless ENV["WITH_MONGOID"]
 update_generators_config
 create_application_layout_and_views
+install_mongoid if ENV["WITH_MONGOID"]
 install_misc_support_files
 install_app_config
 install_compass
