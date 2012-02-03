@@ -1,6 +1,6 @@
 source :rubygems
 
-gem "rails", "3.1.1"
+gem "rails", "3.2.1"
 gem "json"
 gem "jquery-rails"
 gem "mysql"
@@ -8,21 +8,24 @@ gem "mysql"
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.1.4'
-  gem 'coffee-rails', '~> 3.1.1'
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
-  gem "compass", "~> 0.12.alpha"
+  gem "compass", "~> 0.12.rc.0"
 end
 
 gem "app_config", :git => "git://github.com/die-antwort/app_config.git"
-gem "formtastic", "~> 2.0.0"
+gem "formtastic", ">= 2.1.0.beta1"
 gem "airbrake"
 gem "will_paginate", "~> 3.0"
 
-# Optional gems (from Rails 3.1 default Gemfile):
+# Optional gems (from Rails 3.2 default Gemfile):
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
+
+# To use Jbuilder templates for JSON
+# gem 'jbuilder'
 
 # Use unicorn as the web server
 # gem 'unicorn'
