@@ -13,11 +13,19 @@ Then run:
 
     da-suspenders create projectname
 
-This will create a Rails 3 app in `projectname'. This script creates a new git repository. It is not meant to be used against an existing repo.
+This will create a Rails 3.2 app in `projectname`. This script creates a new git repository. It is not meant to be used against an existing repo.
+
+### Mongoid 
+If you want to create an app using [Mongoid](http://mongoid.org/) pass the `--with-mongoid` option:
+
+    da-suspenders create projectname --with-mongoid
+
+
+### Trout
 
 Suspenders uses [Trout](https://github.com/thoughtbot/trout) to make it easier to maintain a base version of special files (like Gemfile) in Suspenders.
 
-Whenever you want to get the latest and greatest Suspenders' Gemfile, run:
+Whenever you want to get the latest and greatest DA-Suspenders' Gemfile, run:
 
     trout update Gemfile
 
@@ -39,7 +47,7 @@ It includes application gems like:
 
 And testing gems like:
 
-* [Cucumber, Capybara, and Akephalos](http://robots.thoughtbot.com/post/1658763359/thoughtbot-and-the-holy-grail) for integration testing, including Javascript behavior
+* [Cucumber, Capybara, and Capybara-Webkit](http://robots.thoughtbot.com/post/4583605733/capybara-webkit) for integration testing, including Javascript behavior
 * [RSpec](https://github.com/rspec/rspec) for awesome, readable isolation testing
 * [Factory Girl](https://github.com/thoughtbot/factory_girl) for easier creation of test data
 * [Timecop](https://github.com/jtrupiano/timecop) for dealing with time
