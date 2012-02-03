@@ -110,11 +110,10 @@ def install_formtastic
 end
 
 def install_javascripts
-  say "Installing application.js.coffee, modernizr and jquery-ui", :yellow
+  say "Installing application.js.coffee and modernizr", :yellow
   remove_file "app/assets/javascripts/application.js"
   trout "app/assets/javascripts/application.js.coffee"
   trout "vendor/assets/javascripts/modernizr.js" 
-  trout "vendor/assets/javascripts/jquery-ui-1.8.16.js" 
 end
 
 def install_rspec_and_cucumber
