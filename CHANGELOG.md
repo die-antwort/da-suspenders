@@ -1,3 +1,9 @@
+## 1.2.0 (2012-02-03)
+ * Updated to use Rails 3.2.1
+ * Removed ie6 and ie7 stylesheets.
+ * Removed jQuery-UI (already contained in jquery-rails).
+ * Switched from akephalos to capybara-webkit.
+ 
 ## 1.1.0 (2011-10-12)
 
 ### New / Changed
