@@ -1,3 +1,6 @@
+## 1.2.1 (2012-02-03)
+ * Update gem dependency to Rails 3.2.1
+ 
 ## 1.2.0 (2012-02-03)
  * Updated to use Rails 3.2.1
  * Removed ie6 and ie7 stylesheets.
