@@ -1,16 +1,5 @@
-$ie6: false !default;
-$ie7: false !default;
-
 @import 'compass/reset';
 @import 'compass/utilities';
 @import 'compass/css3';
 
 @import 'formtastic';
-
-// Use following syntax for IE6/7-specific rules:
-// .foobar {
-//   float: left;
-//   margin-left: 20px;
-//   @if $ie6 { margin-left: 10px; }
-//   @if $ie7 { margin-left: 15px; }
-// }

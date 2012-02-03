@@ -3,8 +3,6 @@
 <head>
   <title>Testapp</title>
   <%= stylesheet_link_tag "application", :media => "all" %>
-  <!--[if IE 6]><%= stylesheet_link_tag "ie6", :media => "all" %><![endif]-->
-  <!--[if IE 7]><%= stylesheet_link_tag "ie7", :media => "all" %><![endif]-->
   <%= javascript_include_tag "application" %>
   <%= javascript_tag "$.ajaxSetup({ async: false });" if Rails.env.test? %>
   <%= csrf_meta_tags %>

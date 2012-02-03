@@ -100,8 +100,6 @@ def install_compass
   say "Installing compass", :yellow
   remove_file "app/assets/stylesheets/application.css"
   trout "app/assets/stylesheets/application.css.scss"
-  trout "app/assets/stylesheets/ie6.css.scss"
-  trout "app/assets/stylesheets/ie7.css.scss"
 end
 
 def install_formtastic
