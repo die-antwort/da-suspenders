@@ -120,7 +120,7 @@ def install_rspec_and_cucumber
   generate "cucumber:install", "--rspec --capybara"
   inject_into_file "features/support/env.rb",
                    %{Capybara.save_and_open_page_path = "tmp"\n} +
-                   %{Capybara.javascript_driver = :akephalos\n},
+                   %{Capybara.javascript_driver = :webkit\n},
                    :before => %{Capybara.default_selector = :css}
   inject_into_file "features/support/paths.rb",
                    %{    when %r{"(/.*)?"}\n} +
