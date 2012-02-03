@@ -1,5 +1,7 @@
 ## 1.2.1 (2012-02-03)
- * Update gem dependency to Rails 3.2.1
+ * Add --with-mongoid option to create an app with Mongoid instead of ActiveRecord/MySQL.
+ * Use bleeding edge versions of compass and compass-rails to make it work with Rails 3.2.
+ * Update gem dependency to Rails 3.2.1.
  
 ## 1.2.0 (2012-02-03)
  * Updated to use Rails 3.2.1
