@@ -122,10 +122,6 @@ def install_rspec_and_cucumber
                    %{Capybara.save_and_open_page_path = "tmp"\n} +
                    %{Capybara.javascript_driver = :webkit\n},
                    :before => %{Capybara.default_selector = :css}
-  inject_into_file "features/support/paths.rb",
-                   %{    when %r{"(/.*)?"}\n} +
-                   %{      $1\n\n},
-                   :before => "    else"
   copy_file "factory_girl_steps.rb", "features/step_definitions/factory_girl_steps.rb"
   trout "features/step_definitions/js_steps.rb"
 end
