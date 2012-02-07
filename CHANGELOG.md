@@ -1,3 +1,8 @@
+## 1.2.2 (2012-02-07)
+ * Added "Aristo" theme for jQuery UI (via the jquery-rails-aristo gem).
+ * Added "da-js" JavaScript library.
+ * Updated Modernizr to v2.5.1.
+
 ## 1.2.1 (2012-02-03)
  * Add --with-mongoid option to create an app with Mongoid instead of ActiveRecord/MySQL.
  * Use bleeding edge versions of compass and compass-rails to make it work with Rails 3.2.

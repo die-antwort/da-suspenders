@@ -44,6 +44,8 @@ It includes application gems like:
 * [Devise](https://github.com/plataformatec/devise) and [CanCan](https://github.com/ryanb/cancan) for authentication and authorization
 * [AppConfig](https://github.com/die-antwort/app_config) for simple application configuration
 * [Airbrake](https://github.com/thoughtbot/airbrake) for exception notification
+* [jquery-rails-aristo](https://github.com/die-antwort/jquery-rails-aristo), a beautiful theme for jQuery UI
+* [da-js](https://github.com/die-antwort/da-js), our collection of small, useful JavaScripts
 
 And testing gems like:
 
