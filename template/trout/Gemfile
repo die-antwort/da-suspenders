@@ -20,6 +20,7 @@ gem "formtastic", ">= 2.1.0.beta1"
 gem "airbrake"
 gem "will_paginate", "~> 3.0"
 gem "jquery-rails-aristo"
+gem "da-js"
 
 # Optional gems (from Rails 3.2 default Gemfile):
 

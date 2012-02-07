@@ -6,5 +6,6 @@
 #  require jquery-ui
 #  require jquery-ui-i18n
 
+#= require da-js
 #= require_tree .
 
