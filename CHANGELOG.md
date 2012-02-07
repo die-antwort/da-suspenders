@@ -1,3 +1,6 @@
+## Unreleased 
+ * Added our fork of "trout" to the Gemfile.
+ 
 ## 1.2.2 (2012-02-07)
  * Added "Aristo" theme for jQuery UI (via the jquery-rails-aristo gem).
  * Added "da-js" JavaScript library.

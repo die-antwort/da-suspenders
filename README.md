@@ -23,12 +23,14 @@ If you want to create an app using [Mongoid](http://mongoid.org/) pass the `--wi
 
 ### Trout
 
-Suspenders uses [Trout](https://github.com/thoughtbot/trout) to make it easier to maintain a base version of special files (like Gemfile) in Suspenders.
+DA-Suspenders uses [Trout](https://github.com/die-antwort/trout) to make it easier to maintain a base version of special files (like Gemfile) in Suspenders.
 
-Whenever you want to get the latest and greatest DA-Suspenders' Gemfile, run:
+Whenever you want to get the latest and greatest files from DA-Suspenders’, run:
 
-    trout update Gemfile
-
+    trout update-all
+    
+You can use `trout list` to check which files are tracked by Trout, and `trout update FILENAME` if you want to update just a single file only.     
+    
 
 ## Gemfile
 
