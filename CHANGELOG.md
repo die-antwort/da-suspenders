@@ -1,5 +1,6 @@
 ## Unreleased 
  * Added our fork of "trout" to the Gemfile.
+ * Use compass-rails gem (pre-release) instead of requiring it directly from Github. 
  
 ## 1.2.2 (2012-02-07)
  * Added "Aristo" theme for jQuery UI (via the jquery-rails-aristo gem).
