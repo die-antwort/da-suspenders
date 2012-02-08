@@ -3,3 +3,4 @@ pkg
 test_project
 .rake_tasks
 .DS_Store
+Gemfile.lock

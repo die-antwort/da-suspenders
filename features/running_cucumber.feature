@@ -1,5 +1,8 @@
 Feature: Running cucumber in the generated project
   
+  Background:
+    Given I have a clean environment 
+    
   Scenario: The generated project works correctly
     Given I drop and create the required databases
     And I generate "scaffold user username:string"
