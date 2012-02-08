@@ -28,9 +28,7 @@ end
 
 When 'I drop and create the required databases' do
   Dir.chdir('test_project') do
-    system("bundle exec rake db:drop RAILS_ENV=test")
     system("bundle exec rake db:drop")
-    system("bundle exec rake db:create RAILS_ENV=test")
     system("bundle exec rake db:create")
   end
 end

@@ -30,8 +30,7 @@ namespace :test_project do
   desc 'Remove a suspended project'
   task :destroy => :clean_env do
     FileUtils.cd TEST_PROJECT
-    sh "bundle exec rake db:drop RAILS_ENV=development"
-    sh "bundle exec rake db:drop RAILS_ENV=test"
+    sh "bundle exec rake db:drop"
     FileUtils.cd '..'
     FileUtils.rm_rf TEST_PROJECT
   end
