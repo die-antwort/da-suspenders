@@ -1,3 +1,6 @@
+## Unreleased
+ * Use mysql2 gem instead of mysql.
+
 ## 1.2.3 (2012-02-10)
  * Updated Modernizr to v2.5.2.
  * Added our fork of "trout" to the Gemfile.
