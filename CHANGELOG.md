@@ -1,4 +1,4 @@
-## Unreleased 
+## 1.2.3 (2012-02-10)
  * Updated Modernizr to v2.5.2.
  * Added our fork of "trout" to the Gemfile.
  * Use compass-rails gem (pre-release) instead of requiring it directly from Github. 
