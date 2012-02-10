@@ -142,7 +142,7 @@ def cleanup
   say "Cleaning up", :yellow
   remove_file 'README'
   remove_file 'public/index.html'
-  remove_file 'public/images/rails.png'
+  remove_file 'assets/images/rails.png'
 end
 
 create_gemfile_and_install_gems
