@@ -55,9 +55,11 @@ def setup_database
   rake "db:create"
 end
 
-def setup_german_locale
-  say "Setting up german locale", :yellow
+def setup_locales
+  say "Setting up locales (defaulting to :de)", :yellow
   trout "config/locales/de.yml"
+  remove_file "config/locales/en.yml"
+  trout "config/locales/en.yml"
   gsub_file 'config/application.rb', '# config.i18n.default_locale = :de', 'config.i18n.default_locale = :de'
 end
 
@@ -77,6 +79,9 @@ def update_generators_config
     config.generators do |generate|
       generate.stylesheets false
       generate.test_framework :rspec
+      
+      # View specs from RSpec scaffolding do not work correctly with delocalize (when decimal columns are present)
+      generate.view_specs false 
     end
   RUBY
   inject_into_class "config/application.rb", "Application", generators_config
@@ -161,7 +166,7 @@ end
 create_gemfile_and_install_gems
 add_staging_environment
 setup_database unless ENV["WITH_MONGOID"]
-setup_german_locale
+setup_locales
 setup_viennese_timezone
 disable_timestamped_migrations unless ENV["WITH_MONGOID"]
 update_generators_config

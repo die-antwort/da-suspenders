@@ -1,3 +1,6 @@
+## Devel (unreleased)
+ * Add delocalize gem. 
+
 ## 1.4.0 (unreleased)
  * Update Rails to 3.2.8.
  * Use Kaminari instead of will_paginate.

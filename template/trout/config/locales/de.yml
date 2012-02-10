@@ -1,6 +1,12 @@
 # Taken from https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/de-AT.yml
 de:
   date:
+    
+    # Formats for delocalize, see https://github.com/clemens/delocalize
+    input:
+      formats:
+        - :default
+
     abbr_day_names:
     - So
     - Mo
@@ -183,9 +189,15 @@ de:
       two_words_connector: ' und '
       words_connector: ', '
   time:
+
+    # Formats for delocalize, see https://github.com/clemens/delocalize
+    input:
+      formats:
+        - :default
+
     am: vormittags
     formats:
-      default: '%A, %d. %B %Y, %H:%M Uhr'
+      default: '%d.%m.%Y %H:%M'
       long: '%A, %d. %B %Y, %H:%M Uhr'
       short: '%d. %B, %H:%M Uhr'
       compact: '%d.%m. %H:%M'

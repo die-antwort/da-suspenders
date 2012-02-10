@@ -44,6 +44,7 @@ It includes application gems like:
 * [Kaminari](https://github.com/amatsuda/kaminari) for easy pagination (view templates modified to be compatible with Bootstrap)
 * [Paperclip](https://github.com/thoughtbot/paperclip) or [CarrierWave](https://github.com/jnicklas/carrierwave) for file uploads
 * [simple_form](https://github.com/plataformatec/simple_form) for better forms
+* [delocalize](https://github.com/clemens/delocalize) for localized date/time and number parsing in forms
 * [Devise](https://github.com/plataformatec/devise) and [CanCan](https://github.com/ryanb/cancan) for authentication and authorization
 * [AppConfig](https://github.com/die-antwort/app_config) for simple application configuration
 * [Airbrake](https://github.com/thoughtbot/airbrake) for exception notification

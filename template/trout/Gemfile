@@ -43,6 +43,7 @@ gem "airbrake", "~> 3.1.2"
 gem "kaminari", "~> 0.13.0"
 gem "bootstrap-sass", "~> 2.0.4.0"
 gem "da-js", "~> 0.1.0"
+gem "delocalize", :github => "die-antwort/delocalize", :branch => "suspenders"
 
 # More optional gems that we use quite often
 

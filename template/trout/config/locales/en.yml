@@ -1,0 +1,14 @@
+en:
+  date:
+    
+    # Formats for delocalize, see https://github.com/clemens/delocalize
+    input:
+      formats:
+        - :default
+
+  time:
+
+    # Formats for delocalize, see https://github.com/clemens/delocalize
+    input:
+      formats:
+        - :default
