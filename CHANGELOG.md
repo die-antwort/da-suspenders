@@ -1,4 +1,5 @@
 ## Unreleased
+ * Updated german locale to latest version from rails-i18n.
  * Use mysql2 gem instead of mysql.
 
 ## 1.2.3 (2012-02-10)
