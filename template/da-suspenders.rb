@@ -100,6 +100,7 @@ end
 def install_misc_support_files
   say "Installing miscellaneous support files", :yellow
   trout "config/initializers/errors.rb"
+  trout "config/initializers/localize_with_fallback.rb"
   trout "app/helpers/body_class_helper.rb"
 end
 
