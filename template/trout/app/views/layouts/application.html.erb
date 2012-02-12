@@ -4,7 +4,7 @@
   <title>Testapp</title>
   <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-  <%= javascript_tag "$.ajaxSetup({ async: false });" if Rails.env.test? %>
+  <%= javascript_tag "$.ajaxSetup({ async: false }); $.fx.off = true;" if Rails.env.test? %>
   <%= csrf_meta_tags %>
 </head>
 <body class="<%= body_class %>">
