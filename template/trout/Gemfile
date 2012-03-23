@@ -1,6 +1,6 @@
 source :rubygems
 
-gem "rails", "3.2.1"
+gem "rails", "3.2.2"
 gem "json"
 gem "jquery-rails"
 gem "mysql2"

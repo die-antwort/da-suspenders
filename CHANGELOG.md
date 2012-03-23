@@ -1,4 +1,5 @@
 ## Unreleased
+ * Update gem dependency to Rails 3.2.2.
  * Add localize\_with\_fallback (see initializer).
  * Updated german locale to latest version from rails-i18n.
  * Use mysql2 gem instead of mysql.
