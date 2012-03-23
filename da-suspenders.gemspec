@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = ">= 1.3.6"
 
   s.add_dependency('rails', '3.2.2')
-  s.add_dependency('bundler', '~> 1.0.10')
+  s.add_dependency('bundler', '>= 1.0.10')
   s.add_dependency('trout', '~> 0.3')
 
   s.add_development_dependency('rake', '~> 0.9.2')
