@@ -63,7 +63,7 @@ end
 
 group :test do
   gem "cucumber-rails"
-  gem "factory_girl_rails"
+  gem "factory_girl_rails", "~> 1.7" # newer versions require Ruby 1.9
   gem "capybara-webkit"
   gem "database_cleaner"
   gem "launchy"

@@ -1,3 +1,6 @@
+## 1.2.5 (2012-03-23)
+ * Lock version of factory\_girl\_rails to <= 2, as newer versions require Ruby 1.9.
+ 
 ## 1.2.4 (2012-03-23)
  * Update gem dependency to Rails 3.2.2.
  * Use simple_form instead of Formtastic.
