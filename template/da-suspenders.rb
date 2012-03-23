@@ -86,6 +86,11 @@ def update_generators_config
   inject_into_class "config/application.rb", "Application", generators_config
 end
 
+def customize_scaffold_generator
+  say "Customize scaffold generator template", :yellow
+  trout "lib/templates/rails/scaffold_controller/controller.rb"
+end
+    
 def create_application_layout_and_views
   say "Creating application layout and shared views", :yellow
   trout "app/views/layouts/application.html.erb"
@@ -153,6 +158,7 @@ setup_german_locale
 setup_viennese_timezone
 disable_timestamped_migrations unless ENV["WITH_MONGOID"]
 update_generators_config
+customize_scaffold_generator
 create_application_layout_and_views
 install_mongoid if ENV["WITH_MONGOID"]
 install_misc_support_files
