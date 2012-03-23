@@ -1,4 +1,4 @@
-## Unreleased
+## 1.2.4 (2012-03-23)
  * Update gem dependency to Rails 3.2.2.
  * Use simple_form instead of Formtastic.
  * Add localize\_with\_fallback (see initializer).
