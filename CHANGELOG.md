@@ -5,6 +5,7 @@
  * Updated german locale to latest version from rails-i18n.
  * Use mysql2 gem instead of mysql.
  * Use customized template for scaffold generator.
+ * Add initializer to silence asset logging.
 
 ## 1.2.3 (2012-02-10)
  * Updated Modernizr to v2.5.2.
