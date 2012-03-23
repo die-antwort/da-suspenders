@@ -115,9 +115,9 @@ def install_compass
   trout "app/assets/stylesheets/application.css.scss"
 end
 
-def install_formtastic
-  say "Installing formtastic", :yellow
-  generate "formtastic:install"
+def install_simple_form
+  say "Installing simple_form", :yellow
+  generate "simple_form:install"
 end
 
 def install_javascripts
@@ -158,7 +158,7 @@ install_mongoid if ENV["WITH_MONGOID"]
 install_misc_support_files
 install_app_config
 install_compass
-install_formtastic
+install_simple_form
 install_javascripts
 install_rspec_and_cucumber
 cleanup

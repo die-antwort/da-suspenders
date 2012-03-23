@@ -42,7 +42,7 @@ It includes application gems like:
 * [Compass](https://github.com/chriseppstein/compass), a [Sass-based](http://sass-lang.com/) CSS Meta-Framework
 * [will_paginate](https://github.com/mislav/will_paginate/wiki/) for easy pagination
 * [Paperclip](https://github.com/thoughtbot/paperclip) or [CarrierWave](https://github.com/jnicklas/carrierwave) for file uploads
-* [Formtastic](https://github.com/justinfrench/formtastic) for better forms
+* [simple_form](https://github.com/plataformatec/simple_form) for better forms
 * [Devise](https://github.com/plataformatec/devise) and [CanCan](https://github.com/ryanb/cancan) for authentication and authorization
 * [AppConfig](https://github.com/die-antwort/app_config) for simple application configuration
 * [Airbrake](https://github.com/thoughtbot/airbrake) for exception notification

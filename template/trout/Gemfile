@@ -16,7 +16,7 @@ end
 
 gem "trout", :git => "git://github.com/die-antwort/trout.git"
 gem "app_config", :git => "git://github.com/die-antwort/app_config.git"
-gem "formtastic", ">= 2.1.0.beta1"
+gem "simple_form"
 gem "airbrake"
 gem "will_paginate", "~> 3.0"
 gem "jquery-rails-aristo"
