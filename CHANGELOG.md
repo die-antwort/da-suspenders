@@ -1,6 +1,7 @@
 ## Unreleased
- * Make --with-mongoid work correctly again.
+ * Update compass-rails to ~> 1.0. 
  * Disable jQuery effects in test environment.
+ * Make --with-mongoid work correctly again.
  
 ## 1.2.5 (2012-03-23)
  * Lock version of factory\_girl\_rails to <= 2, as newer versions require Ruby 1.9.
