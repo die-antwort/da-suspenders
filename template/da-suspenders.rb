@@ -108,6 +108,7 @@ def install_misc_support_files
   trout "config/initializers/localize_with_fallback.rb"
   trout "config/initializers/silence_asset_logging.rb"
   trout "app/helpers/body_class_helper.rb"
+  trout "app/helpers/bootstrap_helper.rb"
 end
 
 def install_app_config
@@ -123,7 +124,7 @@ end
 
 def install_simple_form
   say "Installing simple_form", :yellow
-  generate "simple_form:install"
+  generate "simple_form:install --with-bootstrap"
 end
 
 def install_javascripts
@@ -141,6 +142,9 @@ def install_rspec_and_cucumber
                    %{Capybara.save_and_open_page_path = "tmp"\n} +
                    %{Capybara.javascript_driver = :webkit\n},
                    :before => %{Capybara.default_selector = :css}
+  if ENV["WITH_MONGOID"]
+    gsub_file "features/support/env.rb", "DatabaseCleaner.strategy = :transaction", "DatabaseCleaner.strategy = :truncation"
+  end
   copy_file "factory_girl_steps.rb", "features/step_definitions/factory_girl_steps.rb"
   trout "features/step_definitions/js_steps.rb"
 end

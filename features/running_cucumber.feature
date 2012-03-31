@@ -20,14 +20,14 @@ Feature: Running cucumber in the generated project
         Scenario: Stylesheets are generated correctly
           Given there are no cached assets
           When I visit the application stylesheet
-          Then it should contain the css reset rules from compass
+          Then it should contain bootstrap
       """
     And I create a file named "features/step_definitions/test_steps.rb" with:
       """
       When /^I visit the users page/ do
         visit "/users"
       end
-      
+
       Given /^there are no cached assets$/ do
         FileUtils.rm_rf ["#{Rails.root}/tmp/cache/assets", "#{Rails.root}/tmp/cache/sass"]
       end
@@ -36,8 +36,8 @@ Feature: Running cucumber in the generated project
         visit "/assets/application.css"
       end
 
-      Then /^it should contain the css reset rules from compass$/ do
-        page.should have_content "compass/reset"
+      Then /^it should contain bootstrap$/ do
+        page.should have_content "Bootstrap v2"
       end
       """
     When I run the rake task "cucumber"

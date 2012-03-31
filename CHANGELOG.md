@@ -1,4 +1,5 @@
 ## Unreleased
+ * Use twitter bootstrap instead of jQuery UI.
  * Update compass-rails to ~> 1.0. 
  * Disable jQuery effects in test environment.
  * Make --with-mongoid work correctly again.

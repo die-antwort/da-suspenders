@@ -19,7 +19,7 @@ gem "app_config", :git => "git://github.com/die-antwort/app_config.git"
 gem "simple_form"
 gem "airbrake"
 gem "will_paginate", "~> 3.0"
-gem "jquery-rails-aristo"
+gem 'anjlab-bootstrap-rails', '~> 2.0', :require => 'bootstrap-rails'
 gem "da-js"
 
 # Optional gems (from Rails 3.2 default Gemfile):

@@ -8,8 +8,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body class="<%= body_class %>">
-  <%= render :partial => "shared/flashes" %>
-  <%= yield %>
+  <div class="container">
+    <%= render :partial => "shared/flashes" %>
+    <%= yield %>
+  </div>
 </body>
 </html>
 <!-- Created with care by DIE ANTWORT · Büro für Informationstechnik GmbH -->

@@ -2,9 +2,19 @@
 #= require jquery
 #= require jquery_ujs
 
-# Activate if you want to use jquery-ui 
-#  require jquery-ui
-#  require jquery-ui-i18n
+# Activate whatever bootstrap-components you need
+#= require bootstrap-transition
+#= require bootstrap-alert
+# require bootstrap-modal
+# require bootstrap-dropdown
+# require bootstrap-scrollspy
+# require bootstrap-tab
+# require bootstrap-tooltip
+# require bootstrap-popover
+# require bootstrap-button
+# require bootstrap-collapse
+# require bootstrap-carousel
+# require bootstrap-typeahead
 
 #= require da-js
 #= require_tree .

@@ -39,6 +39,7 @@ To see the latest and greatest gems, look at DA-Suspenders'
 
 It includes application gems like:
 
+* [bootstrap-rails](https://github.com/anjlab/bootstrap-rails), bringing [Twitter Bootstrap](http://twitter.github.com/bootstrap/) to the Rails asset pipeline.
 * [Compass](https://github.com/chriseppstein/compass), a [Sass-based](http://sass-lang.com/) CSS Meta-Framework
 * [will_paginate](https://github.com/mislav/will_paginate/wiki/) for easy pagination
 * [Paperclip](https://github.com/thoughtbot/paperclip) or [CarrierWave](https://github.com/jnicklas/carrierwave) for file uploads
@@ -46,7 +47,6 @@ It includes application gems like:
 * [Devise](https://github.com/plataformatec/devise) and [CanCan](https://github.com/ryanb/cancan) for authentication and authorization
 * [AppConfig](https://github.com/die-antwort/app_config) for simple application configuration
 * [Airbrake](https://github.com/thoughtbot/airbrake) for exception notification
-* [jquery-rails-aristo](https://github.com/die-antwort/jquery-rails-aristo), a beautiful theme for jQuery UI
 * [da-js](https://github.com/die-antwort/da-js), our collection of small, useful JavaScripts
 
 And testing gems like:
