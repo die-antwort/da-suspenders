@@ -34,8 +34,8 @@ def create_gemfile_and_install_gems
     inject_into_file "Gemfile",
                      %Q{gem "mongoid", "~> 2.4"\n} +
                      %Q{gem "bson_ext", "~> 1.5"},
-                     :after => 'gem "mysql"'
-    gsub_file "Gemfile", 'gem "mysql"', ""
+                     :after => 'gem "mysql2"'
+    gsub_file "Gemfile", 'gem "mysql2"', ""
   end
   run "bundle install"
 end
