@@ -1,4 +1,4 @@
-## Unreleased
+## 1.3.0 (2012-04-01)
  * Use twitter bootstrap instead of jQuery UI.
  * Update compass-rails to ~> 1.0. 
  * Add Pry (development and testing environment only).
