@@ -55,6 +55,7 @@ And testing gems like:
 * [RSpec](https://github.com/rspec/rspec) for awesome, readable isolation testing
 * [Factory Girl](https://github.com/thoughtbot/factory_girl) for easier creation of test data
 * [Timecop](https://github.com/jtrupiano/timecop) for dealing with time
+* [Pry](http://pry.github.com/), a powerful alternative to IRB (try `binding.pry` inside a test method)
 
 Some gems are commented out by default in the Gemfile – just uncomment the ones you want to use.
 
