@@ -39,7 +39,7 @@ To see the latest and greatest gems, look at DA-Suspenders'
 
 It includes application gems like:
 
-* [bootstrap-rails](https://github.com/anjlab/bootstrap-rails), bringing [Twitter Bootstrap](http://twitter.github.com/bootstrap/) to the Rails asset pipeline.
+* [bootstrap-sass](https://github.com/thomas-mcdonald/bootstrap-sass), bringing [Twitter Bootstrap](http://twitter.github.com/bootstrap/) to the Rails asset pipeline.
 * [Compass](https://github.com/chriseppstein/compass), a [Sass-based](http://sass-lang.com/) CSS Meta-Framework
 * [will_paginate](https://github.com/mislav/will_paginate/wiki/) for easy pagination
 * [Paperclip](https://github.com/thoughtbot/paperclip) or [CarrierWave](https://github.com/jnicklas/carrierwave) for file uploads

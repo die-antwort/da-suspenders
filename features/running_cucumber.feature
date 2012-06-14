@@ -37,7 +37,7 @@ Feature: Running cucumber in the generated project
       end
 
       Then /^it should contain bootstrap$/ do
-        page.should have_content "Bootstrap v2"
+        page.should have_content "/bootstrap-sass-2."
       end
       """
     When I run the rake task "cucumber"
