@@ -45,7 +45,7 @@ gem "simple_form"
 gem "airbrake"
 gem "will_paginate", "~> 3.0"
 gem 'anjlab-bootstrap-rails', '~> 2.0', :require => 'bootstrap-rails'
-gem "da-js"
+gem "da-js", "~> 0.1.0"
 
 # More optional gems that we use quite often
 

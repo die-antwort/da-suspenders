@@ -1,6 +1,7 @@
 ## 1.3.1 (2012-06-14)
  * Update to Rails 3.2.6
  * Now works with Ruby 1.9 (added encoding comments where necessary)
+ * Use da-js ~> 0.1.0 
  
 ## 1.3.0 (2012-04-01)
  * Use twitter bootstrap instead of jQuery UI.
