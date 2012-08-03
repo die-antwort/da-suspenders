@@ -120,7 +120,7 @@ end
 
 def install_simple_form
   say "Installing simple_form", :yellow
-  generate "simple_form:install --with-bootstrap"
+  generate "simple_form:install --bootstrap"
   gsub_file "config/initializers/simple_form.rb", %r{    (b.use :html5)}, "    #\\1"
 end
 
