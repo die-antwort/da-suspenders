@@ -1,3 +1,6 @@
+## 1.4.0 (unreleased)
+ * Use pry-rails (enables pry for Rails console).
+
 ## 1.3.1 (2012-06-14)
  * Update to Rails 3.2.6
  * Now works with Ruby 1.9 (added encoding comments where necessary)
