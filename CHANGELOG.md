@@ -2,6 +2,7 @@
  * Use Kaminari instead of will_paginate.
  * Use Steak instead of Cucumber.
  * Update Mongoid to ~> 3.0.3.
+ * Disable HTML5 features in simple_form.
  * Minor updates: rspec-rails ~> 2.11.0, bootstrap-sass ~> 2.0.4.0
  * Specify version constraints for all gems. 
  * Use pry-rails (enables pry for Rails console).
