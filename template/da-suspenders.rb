@@ -32,8 +32,7 @@ def create_gemfile_and_install_gems
   trout "Gemfile"
   if ENV["WITH_MONGOID"]
     inject_into_file "Gemfile",
-                     %Q{gem "mongoid", "~> 2.4"\n} +
-                     %Q{gem "bson_ext", "~> 1.5"},
+                     %Q{gem "mongoid", "~> 3.0.3"\n},
                      :after => 'gem "mysql2"'
     gsub_file "Gemfile", 'gem "mysql2"', ""
   end

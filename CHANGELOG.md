@@ -1,5 +1,6 @@
 ## 1.4.0 (unreleased)
  * Use pry-rails (enables pry for Rails console).
+ * Use Mongoid 3.
 
 ## 1.3.1 (2012-06-14)
  * Update to Rails 3.2.6
