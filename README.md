@@ -41,7 +41,7 @@ It includes application gems like:
 
 * [bootstrap-sass](https://github.com/thomas-mcdonald/bootstrap-sass), bringing [Twitter Bootstrap](http://twitter.github.com/bootstrap/) to the Rails asset pipeline.
 * [Compass](https://github.com/chriseppstein/compass), a [Sass-based](http://sass-lang.com/) CSS Meta-Framework
-* [will_paginate](https://github.com/mislav/will_paginate/wiki/) for easy pagination
+* [Kaminari](https://github.com/amatsuda/kaminari) for easy pagination (view templates modified to be compatible with Bootstrap)
 * [Paperclip](https://github.com/thoughtbot/paperclip) or [CarrierWave](https://github.com/jnicklas/carrierwave) for file uploads
 * [simple_form](https://github.com/plataformatec/simple_form) for better forms
 * [Devise](https://github.com/plataformatec/devise) and [CanCan](https://github.com/ryanb/cancan) for authentication and authorization

@@ -1,5 +1,6 @@
 ## 1.4.0 (unreleased)
- * Use steak instead of cucumber.
+ * Use Kaminari instead of will_paginate.
+ * Use Steak instead of Cucumber.
  * Update Mongoid to ~> 3.0.3.
  * Minor updates: rspec-rails ~> 2.11.0, bootstrap-sass ~> 2.0.4.0
  * Specify version constraints for all gems. 

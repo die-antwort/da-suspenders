@@ -40,7 +40,7 @@ gem "trout", :git => "git://github.com/die-antwort/trout.git"
 gem "app_config", :git => "git://github.com/die-antwort/app_config.git"
 gem "simple_form", "~> 2.0.2"
 gem "airbrake", "~> 3.1.2"
-gem "will_paginate", "~> 3.0"
+gem "kaminari", "~> 0.13.0"
 gem "bootstrap-sass", "~> 2.0.4.0"
 gem "da-js", "~> 0.1.0"
 

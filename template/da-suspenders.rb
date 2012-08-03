@@ -130,6 +130,16 @@ def install_javascripts
   trout "vendor/assets/javascripts/modernizr.js" 
 end
 
+def install_kaminari
+  say "Installing Kaminari", :yellow
+  generate "kaminari:config"
+  # view files taken from https://github.com/gabetax/twitter-bootstrap-kaminari-views
+  %w{_first_page _last_page _page _prev_page _gap _next_page _paginator}.each do |file|
+    trout "app/views/kaminari/#{file}.html.erb"
+  end
+  trout "config/locales/kaminari.de.yml"
+end
+
 def install_rspec_and_steak
   say "Installing rspec and steak", :yellow
   generate "rspec:install"
@@ -162,6 +172,7 @@ install_app_config
 install_compass
 install_simple_form
 install_javascripts
+install_kaminari
 install_rspec_and_steak
 cleanup
 
