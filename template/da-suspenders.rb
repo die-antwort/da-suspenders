@@ -133,19 +133,14 @@ def install_javascripts
   trout "vendor/assets/javascripts/modernizr.js" 
 end
 
-def install_rspec_and_cucumber
-  say "Installing rspec and cucumber", :yellow
+def install_rspec_and_steak
+  say "Installing rspec and steak", :yellow
   generate "rspec:install"
-  generate "cucumber:install", "--rspec --capybara"
-  inject_into_file "features/support/env.rb",
-                   %{Capybara.save_and_open_page_path = "tmp"\n} +
-                   %{Capybara.javascript_driver = :webkit\n},
-                   :before => %{Capybara.default_selector = :css}
-  if ENV["WITH_MONGOID"]
-    gsub_file "features/support/env.rb", "DatabaseCleaner.strategy = :transaction", "DatabaseCleaner.strategy = :truncation"
-  end
-  copy_file "factory_girl_steps.rb", "features/step_definitions/factory_girl_steps.rb"
-  trout "features/step_definitions/js_steps.rb"
+  generate "steak:install"
+  gsub_file "spec/spec_helper.rb", %r{^  (config.fixture_path = )}, "  #\\1"
+  gsub_file "spec/spec_helper.rb", %r{^  (config.use_transactional_fixtures = )}, "  #\\1"
+  inject_into_file "spec/spec_helper.rb", %{\n  config.before(:each) do\n    DatabaseCleaner.clean_with(:truncation)\n  end\n}, :before => /^end$/
+  append_to_file "spec/spec_helper.rb", "\nCapybara.javascript_driver = :webkit"
 end
 
 def cleanup
@@ -170,7 +165,7 @@ install_app_config
 install_compass
 install_simple_form
 install_javascripts
-install_rspec_and_cucumber
+install_rspec_and_steak
 cleanup
 
 say "Rails app #{app_name} has been created successully!", :blue

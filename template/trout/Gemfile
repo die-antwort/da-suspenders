@@ -67,7 +67,7 @@ group :development, :test do
 end
 
 group :test do
-  gem "cucumber-rails"
+  gem "steak"
   gem "factory_girl_rails", "~> 1.7" # newer versions require Ruby 1.9
   gem "capybara-webkit"
   gem "database_cleaner"

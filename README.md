@@ -51,7 +51,7 @@ It includes application gems like:
 
 And testing gems like:
 
-* [Cucumber, Capybara, and Capybara-Webkit](http://robots.thoughtbot.com/post/4583605733/capybara-webkit) for integration testing, including Javascript behavior
+* [Steak](https://github.com/cavalle/steak) and [Capybara-Webkit](https://github.com/thoughtbot/capybara-webkit) for integration testing including Javascript behavior
 * [RSpec](https://github.com/rspec/rspec) for awesome, readable isolation testing
 * [Factory Girl](https://github.com/thoughtbot/factory_girl) for easier creation of test data
 * [Timecop](https://github.com/jtrupiano/timecop) for dealing with time

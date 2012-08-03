@@ -3,6 +3,7 @@
  * Update Mongoid to ~> 3.0.3.
  * Update rspec-rails to ~> 2.11.0.
  * Always activate debugger gem (in test and development environments).
+ * Use steak instead of cucumber.
 
 ## 1.3.1 (2012-06-14)
  * Update to Rails 3.2.6
