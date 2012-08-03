@@ -177,12 +177,6 @@ de:
           kb: KB
           mb: MB
           tb: TB
-    percentage:
-      format:
-        delimiter: ''
-    precision:
-      format:
-        delimiter: ''
   support:
     array:
       last_word_connector: ! ' und '
