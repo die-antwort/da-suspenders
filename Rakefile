@@ -15,7 +15,7 @@ TEST_PROJECT = "test_project"
 
 namespace :test do
   desc "A full suspenders app's test suite"
-  task :full => ['test_project:generate', 'cucumber', 'test_project:destroy']
+  task :full => ['test_project:generate', 'cucumber']
 end
 
 namespace :test_project do
