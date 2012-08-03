@@ -1,10 +1,11 @@
 ## 1.4.0 (unreleased)
- * Use pry-rails (enables pry for Rails console).
- * Update Mongoid to ~> 3.0.3.
- * Update rspec-rails to ~> 2.11.0.
- * Always activate debugger gem (in test and development environments).
- * Use thin as development server.
  * Use steak instead of cucumber.
+ * Update Mongoid to ~> 3.0.3.
+ * Minor updates: rspec-rails ~> 2.11.0, bootstrap-sass ~> 2.0.4.0
+ * Specify version constraints for all gems. 
+ * Use pry-rails (enables pry for Rails console).
+ * Use thin as development server.
+ * Always activate debugger gem (in test and development environments).
 
 ## 1.3.1 (2012-06-14)
  * Update to Rails 3.2.6

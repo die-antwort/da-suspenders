@@ -5,7 +5,7 @@ gem "rails", "3.2.6"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem "mysql2"
+gem "mysql2", "~> 0.3.11"
 
 
 # Gems used only for assets and not required
@@ -21,7 +21,7 @@ group :assets do
   gem 'compass-rails', '~> 1.0'
 end
 
-gem "jquery-rails"
+gem "jquery-rails", "~> 2.0.2"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -38,10 +38,10 @@ gem "thin", "~> 1.4.0"
 
 gem "trout", :git => "git://github.com/die-antwort/trout.git"
 gem "app_config", :git => "git://github.com/die-antwort/app_config.git"
-gem "simple_form"
-gem "airbrake"
+gem "simple_form", "~> 2.0.2"
+gem "airbrake", "~> 3.1.2"
 gem "will_paginate", "~> 3.0"
-gem "bootstrap-sass", "~> 2.0.3"
+gem "bootstrap-sass", "~> 2.0.4.0"
 gem "da-js", "~> 0.1.0"
 
 # More optional gems that we use quite often
@@ -63,15 +63,15 @@ gem "da-js", "~> 0.1.0"
 # and rake tasks without having to type RAILS_ENV=test.
 group :development, :test do
   gem "rspec-rails", "~> 2.11.0"
-  gem "pry-rails"
-  gem "debugger"
+  gem "pry-rails", "~> 0.1.6"
+  gem "debugger", "~> 1.2.0"
 end
 
 group :test do
-  gem "steak"
-  gem "factory_girl_rails", "~> 1.7" # newer versions require Ruby 1.9
-  gem "capybara-webkit"
-  gem "database_cleaner"
-  gem "launchy"
-  gem "timecop"
+  gem "steak", "~> 2.0.0"
+  gem "factory_girl_rails", "~> 1.7.0" # newer versions require Ruby 1.9
+  gem "capybara-webkit", "~> 0.12.1"
+  gem "database_cleaner", "~> 0.8.0"
+  gem "launchy", "~> 2.1.1"
+  gem "timecop", "~> 0.4.4"
 end
