@@ -1,5 +1,5 @@
 require "bundler"
-require "cucumber/rake/task"
+require 'rspec/core/rake_task'
 
 Bundler::GemHelper.install_tasks
 
@@ -9,13 +9,13 @@ Bundler::GemHelper.install_tasks
 #
 #############################################################################
 
-Cucumber::Rake::Task.new
+RSpec::Core::RakeTask.new(:spec)
 
 TEST_PROJECT = "test_project"
 
 namespace :test do
   desc "A full suspenders app's test suite"
-  task :full => ['test_project:generate', 'cucumber']
+  task :full => ['test_project:generate', 'spec']
 end
 
 namespace :test_project do
