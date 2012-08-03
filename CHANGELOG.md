@@ -1,6 +1,7 @@
 ## 1.4.0 (unreleased)
  * Use pry-rails (enables pry for Rails console).
- * Use Mongoid 3.
+ * Update Mongoid to ~> 3.0.3.
+ * Update rspec-rails to ~> 2.11.0.
  * Always activate debugger gem (in test and development environments).
 
 ## 1.3.1 (2012-06-14)

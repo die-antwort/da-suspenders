@@ -61,7 +61,7 @@ gem "da-js", "~> 0.1.0"
 # RSpec needs to be in :development group to expose generators
 # and rake tasks without having to type RAILS_ENV=test.
 group :development, :test do
-  gem "rspec-rails", "~> 2.6.0"
+  gem "rspec-rails", "~> 2.11.0"
   gem "pry-rails"
   gem "debugger"
 end
