@@ -38,7 +38,7 @@ gem "thin", "~> 1.4.0"
 
 gem "trout", :git => "git://github.com/die-antwort/trout.git"
 gem "app_config", :git => "git://github.com/die-antwort/app_config.git"
-gem "simple_form", "~> 2.0.2"
+gem "simple_form", "~> 2.0.4"
 gem "airbrake", "~> 3.1.2"
 gem "kaminari", "~> 0.13.0"
 gem "bootstrap-sass", "~> 2.2.1.1"
