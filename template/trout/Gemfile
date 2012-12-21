@@ -63,7 +63,7 @@ gem "da-js", "~> 0.1.0"
 # and rake tasks without having to type RAILS_ENV=test.
 group :development, :test do
   gem "rspec-rails", "~> 2.12.0"
-  gem "pry-rails", "~> 0.1.6"
+  gem "pry-rails", "~> 0.2.2"
   gem "debugger", "~> 1.2.0"
 end
 
