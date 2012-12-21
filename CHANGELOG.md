@@ -5,7 +5,7 @@
  * Update Mongoid to ~> 3.0.3.
  * Use thousands delimiter for number\_to\_precision and number\_to\_percentage.
  * Disable HTML5 features in simple_form.
- * Minor updates: rspec-rails ~> 2.11.0, bootstrap-sass ~> 2.0.4.0
+ * Minor updates: rspec-rails ~> 2.12.0, bootstrap-sass ~> 2.0.4.0
  * Specify version constraints for all gems. 
  * Use pry-rails (enables pry for Rails console).
  * Use thin as development server.
