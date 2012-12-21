@@ -1,5 +1,5 @@
 ## 1.4.0 (unreleased)
- * Update Rails to 3.2.8.
+ * Update Rails to 3.2.9.
  * Use Kaminari instead of will_paginate.
  * Use Steak instead of Cucumber.
  * Update Mongoid to ~> 3.0.3.
