@@ -9,6 +9,7 @@
  * Use thousands delimiter for number\_to\_precision and number\_to\_percentage.
  * Disable HTML5 features in simple_form.
  * Minor updates: rspec-rails ~> 2.12.0, simple_form ~> 2.0.4, capybara-webkit ~> 0.13.0, database_cleaner ~> 0.9.1, timecop ~> 0.5.5
+ * New optional Gem (commented out by default): fix_microsoft_links
  * Specify version constraints for all gems. 
  * Use pry-rails (enables pry for Rails console).
  * Use thin as development server.

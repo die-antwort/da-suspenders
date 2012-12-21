@@ -50,7 +50,7 @@ gem "da-js", "~> 0.1.0"
 # gem "carrierwave"
 # gem "devise"
 # gem "cancan"
-
+# gem "fix_microsoft_links" # See https://github.com/spilliton/fix_microsoft_links
 
 ## RMagick as used by RefineryCMS, to make sure it works on Windows
 #rmagick_options = { :require => false }
