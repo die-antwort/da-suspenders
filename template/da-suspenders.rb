@@ -31,7 +31,7 @@ def create_gemfile_and_install_gems
   say "Creating Gemfile and installing gems (this may take a while)", :yellow
   trout "Gemfile"
   if ENV["WITH_MONGOID"]
-    gsub_file "Gemfile", %r{gem "mysql2".*}, 'gem "mongoid", "~> 3.0.3"'
+    gsub_file "Gemfile", %r{gem "mysql2".*}, 'gem "mongoid", "~> 3.0.15"'
   end
   run "bundle install"
 end
