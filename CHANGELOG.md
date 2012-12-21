@@ -4,6 +4,7 @@
  * Use Kaminari instead of will_paginate.
  * Use Steak instead of Cucumber.
  * Update bootstrap-sass to ~> 2.2.1.1 (Bootstrap 2.2.1)
+ * Update factory_girl_rails to ~> 4.1.0.
  * Update Mongoid to ~> 3.0.15.
  * Use thousands delimiter for number\_to\_precision and number\_to\_percentage.
  * Disable HTML5 features in simple_form.
