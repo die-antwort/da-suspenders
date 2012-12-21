@@ -71,7 +71,7 @@ group :test do
   gem "steak", "~> 2.0.0"
   gem "factory_girl_rails", "~> 4.1.0"
   gem "capybara-webkit", "~> 0.13.0"
-  gem "database_cleaner", "~> 0.8.0"
+  gem "database_cleaner", "~> 0.9.1"
   gem "launchy", "~> 2.1.1"
   gem "timecop", "~> 0.4.4"
 end
