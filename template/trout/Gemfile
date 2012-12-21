@@ -19,6 +19,7 @@ group :assets do
   
   gem 'uglifier', '>= 1.0.3'
   gem 'compass-rails', '~> 1.0'
+  gem "bootstrap-sass", "~> 2.2.1.1"
 end
 
 gem "jquery-rails", "~> 2.0.2"
@@ -41,7 +42,6 @@ gem "app_config", :git => "git://github.com/die-antwort/app_config.git"
 gem "simple_form", "~> 2.0.4"
 gem "airbrake", "~> 3.1.2"
 gem "kaminari", "~> 0.14.1"
-gem "bootstrap-sass", "~> 2.2.1.1"
 gem "da-js", "~> 0.1.0"
 
 # More optional gems that we use quite often
