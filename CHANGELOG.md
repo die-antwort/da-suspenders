@@ -1,4 +1,4 @@
-## 2.0.0 (unreleased)
+## 2.0.0 (2012-12-21)
  * Require Ruby 1.9 (drop support for Ruby 1.8)
  * Update Rails to 3.2.9.
  * Use Kaminari instead of will_paginate.
